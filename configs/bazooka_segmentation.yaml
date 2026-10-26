@@ -1,0 +1,5 @@
+# Bazooka benchmark, segmenter output: the objects of a segmentation (labels, or a binary mask split into
+# 6-connected components of at least 6 voxels) and their watershed parts are candidates (paper, section 6.4).
+# Put one segmentation per crop in segmentations/bazooka/<crop>.tif (T x Z x Y x X) or <crop>/mask###.tif.
+data: data/bazooka
+masks: segmentations/bazooka

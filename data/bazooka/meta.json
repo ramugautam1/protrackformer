@@ -1,0 +1,56 @@
+{
+ "protein": "Par-3/Bazooka-GFP, Drosophila embryo",
+ "voxel_um_zyx": [
+  0.5,
+  0.124,
+  0.124
+ ],
+ "frame_s": 7.5,
+ "sequences": [
+  "Crop01",
+  "Crop02",
+  "Crop03",
+  "Crop04",
+  "Crop05",
+  "Crop06",
+  "Crop07",
+  "Crop08",
+  "Crop09",
+  "Crop10",
+  "Crop11",
+  "Crop12",
+  "Crop13",
+  "Crop14",
+  "Crop15",
+  "Crop16",
+  "Crop17",
+  "Crop18",
+  "Crop19",
+  "Crop20",
+  "Crop21",
+  "Crop22",
+  "Crop23",
+  "Crop24",
+  "Crop25",
+  "Crop26",
+  "Crop27",
+  "Crop28"
+ ],
+ "frames": 40,
+ "shape_zyx": [
+  13,
+  32,
+  32
+ ],
+ "ground_truth": "drawn by hand",
+ "totals": {
+  "splits": 108,
+  "merges": 139,
+  "merges_3plus_parents": 9,
+  "objects": 3031,
+  "links": 2755,
+  "births": 357,
+  "deaths": 311,
+  "gap_links": 105
+ }
+}

@@ -1,0 +1,4 @@
+# Bazooka benchmark, exact instances: every annotated punctum is an object (paper, section 6.1).
+# Cross-validation: protrackformer-train configs/bazooka_instances.yaml --fold 0 --out runs/bazooka_instances/fold0
+data: data/bazooka
+masks: instances

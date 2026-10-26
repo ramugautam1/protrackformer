@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use ProTrackFormer or its benchmarks, please cite it as below."
+title: "ProTrackFormer: Merge-Native Tracking of Splitting and Fusing Protein Puncta in 3D Live Microscopy"
+type: software
+authors:
+  - name: "ProTrackFormer authors"
+version: 1.0.0
+license: MIT
+keywords:
+  - cell tracking
+  - lineage
+  - protein puncta
+  - fluorescence microscopy

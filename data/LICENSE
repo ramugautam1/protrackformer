@@ -1,0 +1,10 @@
+The Bazooka and Gish benchmarks in this folder (images, masks, track tables, link lists and metadata) are
+licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You may share and adapt the data for any purpose, including commercially, provided that you give appropriate
+credit, provide a link to the license, and indicate if changes were made. Credit means citing the ProTrackFormer
+paper (see CITATION.cff in the repository root).
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+The code of this repository is licensed separately under the MIT License (see LICENSE in the repository root).

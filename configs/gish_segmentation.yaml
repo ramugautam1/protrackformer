@@ -1,0 +1,5 @@
+# Gish, segmenter output, fine-tuned from the Bazooka segmentation model.
+# Put the segmentation of the field in segmentations/gish/01.tif.
+data: data/gish
+masks: segmentations/gish
+init: checkpoints/bazooka_segmentation.pt

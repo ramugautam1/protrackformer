@@ -1,0 +1,146 @@
+{
+ "0": {
+  "train": [
+   "Crop02",
+   "Crop05",
+   "Crop07",
+   "Crop08",
+   "Crop09",
+   "Crop14",
+   "Crop15",
+   "Crop17",
+   "Crop18",
+   "Crop19",
+   "Crop20",
+   "Crop21",
+   "Crop22",
+   "Crop23",
+   "Crop25",
+   "Crop26",
+   "Crop27",
+   "Crop28"
+  ],
+  "val": [
+   "Crop03",
+   "Crop06",
+   "Crop13"
+  ],
+  "test": [
+   "Crop01",
+   "Crop04",
+   "Crop10",
+   "Crop11",
+   "Crop12",
+   "Crop16",
+   "Crop24"
+  ]
+ },
+ "1": {
+  "train": [
+   "Crop01",
+   "Crop04",
+   "Crop08",
+   "Crop09",
+   "Crop10",
+   "Crop11",
+   "Crop12",
+   "Crop16",
+   "Crop17",
+   "Crop18",
+   "Crop19",
+   "Crop20",
+   "Crop21",
+   "Crop22",
+   "Crop23",
+   "Crop24",
+   "Crop26",
+   "Crop27"
+  ],
+  "val": [
+   "Crop02",
+   "Crop05",
+   "Crop07"
+  ],
+  "test": [
+   "Crop03",
+   "Crop06",
+   "Crop13",
+   "Crop14",
+   "Crop15",
+   "Crop25",
+   "Crop28"
+  ]
+ },
+ "2": {
+  "train": [
+   "Crop01",
+   "Crop03",
+   "Crop04",
+   "Crop06",
+   "Crop10",
+   "Crop11",
+   "Crop12",
+   "Crop13",
+   "Crop14",
+   "Crop15",
+   "Crop16",
+   "Crop21",
+   "Crop22",
+   "Crop23",
+   "Crop24",
+   "Crop25",
+   "Crop26",
+   "Crop28"
+  ],
+  "val": [
+   "Crop08",
+   "Crop09",
+   "Crop20"
+  ],
+  "test": [
+   "Crop02",
+   "Crop05",
+   "Crop07",
+   "Crop17",
+   "Crop18",
+   "Crop19",
+   "Crop27"
+  ]
+ },
+ "3": {
+  "train": [
+   "Crop02",
+   "Crop03",
+   "Crop05",
+   "Crop06",
+   "Crop07",
+   "Crop11",
+   "Crop12",
+   "Crop13",
+   "Crop14",
+   "Crop15",
+   "Crop16",
+   "Crop17",
+   "Crop18",
+   "Crop19",
+   "Crop24",
+   "Crop25",
+   "Crop27",
+   "Crop28"
+  ],
+  "val": [
+   "Crop01",
+   "Crop04",
+   "Crop10"
+  ],
+  "test": [
+   "Crop08",
+   "Crop09",
+   "Crop20",
+   "Crop21",
+   "Crop22",
+   "Crop23",
+   "Crop26"
+  ]
+ }
+}

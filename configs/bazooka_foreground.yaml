@@ -1,0 +1,4 @@
+# Bazooka benchmark, annotated foreground: touching puncta are fused, and the tracker chooses among
+# connected components and their watershed parts (paper, section 6.3).
+data: data/bazooka
+masks: foreground

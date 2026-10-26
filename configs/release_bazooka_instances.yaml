@@ -1,0 +1,6 @@
+# The released checkpoints/bazooka_instances.pt: all crops but three for training, three for selection.
+data: data/bazooka
+masks: instances
+train: [Crop01, Crop02, Crop04, Crop05, Crop07, Crop08, Crop09, Crop10, Crop11, Crop12, Crop14, Crop15, Crop16,
+        Crop17, Crop18, Crop19, Crop20, Crop21, Crop22, Crop23, Crop24, Crop25, Crop26, Crop27, Crop28]
+val: [Crop03, Crop06, Crop13]

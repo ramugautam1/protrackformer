@@ -1,0 +1,3 @@
+# Gish benchmark, exact instances; folds are quadrants of the field (paper, section 6.2).
+data: data/gish
+masks: instances

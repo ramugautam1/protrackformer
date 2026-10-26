@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "protrackformer"
+version = "1.0.0"
+description = "Tracking protein puncta that split and merge in 3D live microscopy"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "ProTrackFormer authors" }]
+keywords = ["tracking", "microscopy", "lineage", "transformer", "integer programming"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "torch>=2.1",
+    "tifffile>=2023.1",
+    "scikit-image>=0.21",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+nifti = ["nibabel>=5.0"]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+protrackformer-train = "protrackformer.train:main"
+protrackformer-track = "protrackformer.track:main"
+protrackformer-evaluate = "protrackformer.evaluate:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = ["E731", "E741"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: trains a tiny model on two crops and runs the command-line tools (about 10 s on a CPU)"]
+filterwarnings = ["ignore:index_reduce:UserWarning"]

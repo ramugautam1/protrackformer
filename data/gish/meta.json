@@ -1,0 +1,75 @@
+{
+ "protein": "Gilgamesh (Gish)-GFP, Drosophila embryo",
+ "voxel_um_zyx": [
+  0.5,
+  0.132,
+  0.132
+ ],
+ "frame_s": 9.54,
+ "sequences": [
+  "01"
+ ],
+ "frames": 20,
+ "shape_zyx": [
+  13,
+  256,
+  256
+ ],
+ "ground_truth": "ProTrack3D output corrected event by event and reviewed by hand",
+ "views": {
+  "Q0": {
+   "sequence": "01",
+   "box": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "margin": 8,
+   "unit_tile": 64
+  },
+  "Q1": {
+   "sequence": "01",
+   "box": [
+    0,
+    128,
+    128,
+    128
+   ],
+   "margin": 8,
+   "unit_tile": 64
+  },
+  "Q2": {
+   "sequence": "01",
+   "box": [
+    128,
+    0,
+    128,
+    128
+   ],
+   "margin": 8,
+   "unit_tile": 64
+  },
+  "Q3": {
+   "sequence": "01",
+   "box": [
+    128,
+    128,
+    128,
+    128
+   ],
+   "margin": 8,
+   "unit_tile": 64
+  }
+ },
+ "totals": {
+  "objects": 2635,
+  "links": 2035,
+  "splits": 110,
+  "merges": 106,
+  "merges_3plus_parents": 9,
+  "births": 654,
+  "deaths": 518,
+  "gap_links": 0
+ }
+}
