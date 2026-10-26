@@ -27,6 +27,9 @@ dependencies = [
     "pyyaml>=6.0",
 ]
 
+[project.urls]
+Repository = "https://github.com/ramugautam1/protrackformer"
+
 [project.optional-dependencies]
 nifti = ["nibabel>=5.0"]
 dev = ["pytest>=7", "ruff>=0.4"]

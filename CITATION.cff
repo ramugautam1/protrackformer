@@ -4,6 +4,7 @@ title: "ProTrackFormer: Merge-Native Tracking of Splitting and Fusing Protein Pu
 type: software
 authors:
   - name: "ProTrackFormer authors"
+repository-code: "https://github.com/ramugautam1/protrackformer"
 version: 1.0.0
 license: MIT
 keywords:

@@ -34,7 +34,7 @@ from Bazooka), against at most 0.44 and 0.54 for the baselines.
 ## Install
 
 ```bash
-git clone <repository-url> protrackformer
+git clone https://github.com/ramugautam1/protrackformer.git
 cd protrackformer
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
