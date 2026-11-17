@@ -34,3 +34,18 @@ def test_binary_masks_become_components(toy):
     _, labels, _ = toy
     inst = to_instances((labels > 0).astype(np.uint8))
     assert inst.max() >= 2 and inst.dtype == np.int32
+
+
+def test_binary_masks_with_any_foreground_value(toy):
+    """0/255 and 0/65535 masks (ProTrack3D, ImageJ) are binary, not one label covering the whole foreground."""
+    _, labels, _ = toy
+    ref = to_instances((labels > 0).astype(np.uint8))
+    for value, dtype in ((255, np.uint8), (65535, np.uint16)):
+        inst = to_instances(((labels > 0) * value).astype(dtype))
+        assert np.array_equal(inst, ref)
+
+
+def test_label_images_pass_through(toy):
+    _, labels, _ = toy
+    assert np.array_equal(to_instances(labels), labels.astype(np.int32))
+

@@ -61,8 +61,12 @@ def read_stack(path: Path, channel: int | None = None, frames: tuple[int, int] |
 
 
 def to_instances(masks: np.ndarray, connectivity: int = 6, min_size: int = 6) -> np.ndarray:
-    """Binary masks become connected components of at least `min_size` voxels; label images pass through."""
-    if masks.max() > 1:
+    """Binary masks become connected components of at least `min_size` voxels; label images pass through.
+
+    A mask is binary when its foreground has a single value: 1, or 255 / 65535 as written by many tools
+    (ProTrack3D, ImageJ). A label image has more than one foreground value."""
+    fg = masks[masks > 0]
+    if fg.size and fg.min() != fg.max():
         return masks.astype(np.int32)
     struct = ndi.generate_binary_structure(3, 1 if connectivity == 6 else 3)
     out = np.zeros(masks.shape, np.int32)

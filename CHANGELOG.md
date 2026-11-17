@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- `protrackformer-track`: binary masks whose foreground is stored as 255 or 65535 (ProTrack3D, ImageJ) are now
+  split into connected components like 0/1 masks. Before, any mask with values above 1 was read as a label image,
+  so such a mask became a single object per frame and tracking returned almost nothing.
+
 ## 1.0.0
 
 - ProTrackFormer: link-to-link attention, independent link probabilities, degree heads and exact decoding
